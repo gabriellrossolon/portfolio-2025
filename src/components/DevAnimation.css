@@ -1,0 +1,52 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);  /* Posição inicial e final */
+  }
+  50% {
+    transform: translateY(-2px);  /* A subida da letra */
+  }
+}
+
+.animate-text span {
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite;  /* Aplica a animação nas letras */
+  animation-delay: calc(0.1s * var(--i));  /* Controla o delay individual de cada letra */
+}
+
+/* Adicionando um pouco de delay para cada letra (para o efeito em sequência) */
+h1 span:nth-child(1) {
+  --i: 0;
+}
+h1 span:nth-child(2) {
+  --i: 1;
+}
+h1 span:nth-child(3) {
+  --i: 2;
+}
+h1 span:nth-child(4) {
+  --i: 3;
+}
+h1 span:nth-child(5) {
+  --i: 4;
+}
+h1 span:nth-child(6) {
+  --i: 5;
+}
+h1 span:nth-child(7) {
+  --i: 6;
+}
+h1 span:nth-child(8) {
+  --i: 7;
+}
+h1 span:nth-child(9) {
+  --i: 8;
+}
+h1 span:nth-child(10) {
+  --i: 9;
+}
+h1 span:nth-child(11) {
+  --i: 10;
+}
+h1 span:nth-child(12) {
+  --i: 11;
+}
