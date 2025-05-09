@@ -6,4 +6,4 @@ Bem-vindo ao repositório do meu portfólio pessoal! Este projeto está sendo de
 
 - [React](https://reactjs.org/) — biblioteca JavaScript para interfaces reativas
 - [Tailwind CSS](https://tailwindcss.com/) — framework utilitário para estilização moderna e responsiva
-- [Vite](https://vitejs.dev/) *(opcional, caso esteja usando)* — bundler rápido para desenvolvimento com React
+- [Vite](https://vitejs.dev/) — bundler rápido para desenvolvimento com React
