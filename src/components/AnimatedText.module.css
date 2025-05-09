@@ -13,7 +13,7 @@
   animation-delay: calc(0.1s * var(--i));  /* Controla o delay individual de cada letra */
 }
 
-/* Adicionando um pouco de delay para cada letra (para o efeito em sequência) */
+/* Atribuindo o delay para cada letra (com base no seu índice) */
 h1 span:nth-child(1) {
   --i: 0;
 }
