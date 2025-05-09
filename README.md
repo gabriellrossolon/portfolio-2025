@@ -1,6 +1,6 @@
 # 🚧 Meu Portfólio [Em Desenvolvimento] 🚧
 
-Bem-vindo ao repositório do meu portfólio pessoal! Este projeto está sendo desenvolvido com foco em performance, design responsivo e uma ótima experiência de usuário.
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto single-page está sendo desenvolvido com foco em performance, componentização, design responsivo e uma ótima experiência de usuário.
 
 ## ✨ Tecnologias Utilizadas
 
