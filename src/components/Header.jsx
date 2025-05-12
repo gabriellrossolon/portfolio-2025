@@ -4,7 +4,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <div className=" flex items-center justify-between px-4 py-2 shadow-md shadow-blue-300/20 bg-gray-800/50">
+    <div className=" flex items-center justify-between px-4 py-2 shadow-md shadow-blue-300/20 bg-gray-800/20 backdrop-blur-sm">
       <div className="flex flex-col leading-none text-xl font-bold ">
         <div className="">
           <p><span>Gabriell</span></p>

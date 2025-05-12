@@ -9,11 +9,13 @@ import Rain from './components/Rain'
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
+
       <Header />
       <Rain />
       <Body />
-    </>
+      <Footer />
+    </div>
   )
 }
 

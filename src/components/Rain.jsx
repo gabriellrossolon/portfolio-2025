@@ -9,22 +9,16 @@ const rainItems = [
   "console.log('Hello World');",
   "var a = true;",
   "document.querySelector();",
-    "const x = 10;",
-  "let y = 'Hello';",
-  "function greet() {}",
-  "let z = [1, 2, 3];",
-  "console.log('Hello World');",
-  "var a = true;",
-  "document.querySelector();",
-    "const x = 10;",
-  "let y = 'Hello';",
-  "function greet() {}",
-  "let z = [1, 2, 3];",
-  "console.log('Hello World');",
-  "var a = true;",
-  "document.querySelector();",
-  // Adicione mais linhas de código, se necessário
+  "if (x > 5) { console.log(x); }",
+  "for (let i = 0; i < 5; i++) { console.log(i); }",
+  "const sum = (a, b) => a + b;",
+  "try { something(); } catch (e) { console.error(e); }",
+  "window.addEventListener('load', () => {});",
+  "localStorage.setItem('key', 'value');",
+  "JSON.parse('{ \"name\": \"John\" }');",
+  "new Promise((resolve, reject) => {});"
 ];
+
 
 const getRandomPosition = () => {
   const top = Math.random() * -100;  // Posiciona aleatoriamente na parte superior
