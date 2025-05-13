@@ -84,20 +84,6 @@ const AboutMe = () => {
           <div className="flex flex-col items-start gap-2">
             <div className="flex flex-col">
               <h3 className="text-3xl font-bold">Asstramed SST</h3>
-              <h4 className="font-semibold text-blue-200">Analista de Suporte/T.I</h4>
-              <p className="text-gray-20 italic">Jun/2022 - Presente</p>
-            </div>
-            <p className="text-gray-200">
-              Atuei como Analista de Suporte e TI, prestando atendimento técnico
-              a sistemas, softwares e hardwares da empresa e clientes.
-              Responsável pela manutenção, resolução de problemas, implantação
-              de sistemas e suporte ao usuário, sempre com foco na eficiência e
-              melhoria contínua dos processos.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-2">
-            <div className="flex flex-col">
-              <h3 className="text-3xl font-bold">Asstramed SST</h3>
               <h4 className="font-semibold text-blue-200">Desenvolvedor Front-End Jr.</h4>
               <p className="text-gray-20 italic">Fev/2023 - Presente</p>
             </div>
@@ -112,6 +98,20 @@ const AboutMe = () => {
                 Desenvolvimento de Emails para Marketing em HTML.
               </li>
             </ul>
+          </div>
+          <div className="flex flex-col items-start gap-2">
+            <div className="flex flex-col">
+              <h3 className="text-3xl font-bold">Asstramed SST</h3>
+              <h4 className="font-semibold text-blue-200">Analista de Suporte/T.I</h4>
+              <p className="text-gray-20 italic">Jun/2022 - Presente</p>
+            </div>
+            <p className="text-gray-200">
+              Atuei como Analista de Suporte e TI, prestando atendimento técnico
+              a sistemas, softwares e hardwares da empresa e clientes.
+              Responsável pela manutenção, resolução de problemas, implantação
+              de sistemas e suporte ao usuário, sempre com foco na eficiência e
+              melhoria contínua dos processos.
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-4"> {/* Idiomas */}
