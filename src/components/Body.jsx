@@ -5,11 +5,13 @@ import CardsSect from "./CardsSect";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaArrowLeft, FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaArrowRight, FaUser, FaCode } from 'react-icons/fa';
+import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
+import { TbBrandCSharp } from "react-icons/tb";
+
 import Projects from "./Projects";
 
-const Body = () => {
+const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections}) => {
   const techIcons = [
     { name: 'React', icon: <FaReact />, color: '#61DBFB' },
     { name: 'JavaScript', icon: <FaJsSquare />, color: '#F7DF1E' },
@@ -17,10 +19,10 @@ const Body = () => {
     { name: 'CSS3', icon: <FaCss3Alt />, color: '#264DE4' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38BDF8' },
+    { name: 'C#', icon: <TbBrandCSharp/>, color: '#68217A'},
+    { name: "Github", icon: <FaGithub />, color: '#FFFFFF'},
   ];
 
-  const [aboutMe, setAboutMe] = useState(false);
-  const [projects, setProjects] = useState(false);
   const showingText = aboutMe ? ("< Sobre Mim />") : projects ? ("< Projetos />") : ("< Portfólio />");
 
   return (
@@ -31,8 +33,9 @@ const Body = () => {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.4 }}
-        className="flex flex-col items-center justify-center gap-10"
+        className="flex flex-col gap-1 lg:flex-row md:gap-10 items-center justify-center "
       >
+        {(aboutMe || projects) && <Button text={<FaHome />} fontSize={"text-3xl"} onClick={() => closeOpenedSections()} />}
         <AnimatedText text={showingText} />
       </motion.div>
 
@@ -46,7 +49,7 @@ const Body = () => {
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center justify-center gap-10 w-full"
           >
-            <Button text={<FaArrowLeft />} fontSize={"text-3xl"} onClick={() => setAboutMe(false)} />
+            
             <AboutMe />
           </motion.div>
         ) : 
@@ -59,7 +62,6 @@ const Body = () => {
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center justify-center gap-10 w-full"
           >
-            <Button text={<FaArrowLeft />} fontSize={"text-3xl"} onClick={() => setProjects(false)} />
             <Projects techIcons={techIcons} />
           </motion.div>
         ) : 
