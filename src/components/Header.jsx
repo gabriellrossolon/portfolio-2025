@@ -16,7 +16,7 @@ const Header = ({handleSetShowForm, darkTheme, handleChangeTheme, closeOpenedSec
           <p><span>Rossolon</span></p>
         </div>
       </div>
-      <div className="flex justify-between items-center gap-12">
+      <div className="flex justify-between items-center lg:gap-12 gap-4">
         <div className="flex items-center justify-center text-4xl gap-4">
           <button onClick={() => window.open("https://www.linkedin.com/in/gabriell-rossolon/", "_blank")}>
             <FaLinkedin className="cursor-pointer hover:text-blue-500 transition-colors duration-300"/>
