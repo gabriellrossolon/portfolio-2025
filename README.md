@@ -1,6 +1,6 @@
 # 🚀 Meu Portfolio Pessoal
 
-[🌐 Acesse Online](https://portfolio-2025-cyan-eight.vercel.app) &nbsp;&nbsp;|&nbsp;&nbsp; [💻 Código no GitHub](https://github.com/seuusuario/seuportfolio)
+[🌐 Acesse Online](https://portfolio-2025-cyan-eight.vercel.app) &nbsp;&nbsp;|&nbsp;&nbsp; [💻 Código no GitHub](https://github.com/gabriellrossolon/portfolio-2025)
 
 ---
 
@@ -26,8 +26,10 @@ Este portfolio foi criado com muito carinho utilizando **React + Vite + Tailwind
 
 ---
 
-## 👀 Acesse o Projeto
+## 🖥️ Screenshots
+![screencapture-portfolio-2025-cyan-eight-vercel-app-2025-05-15-11_47_51](https://github.com/user-attachments/assets/db3343bd-d9c4-4bf7-8bd7-3aaba1a6229c)
+![screencapture-portfolio-2025-cyan-eight-vercel-app-2025-05-15-11_48_08](https://github.com/user-attachments/assets/aa5b73da-f763-4f51-805b-dceb4f3626a0)
+![screencapture-portfolio-2025-cyan-eight-vercel-app-2025-05-15-11_48_18](https://github.com/user-attachments/assets/068ccbf2-8bee-49a9-84eb-4258d50f413c)
 
-Quer ver como ficou? Clique no link abaixo para acessar o portfolio online:
 
 
