@@ -35,9 +35,9 @@ function App() {
       <Body aboutMe={aboutMe} setAboutMe={setAboutMe} projects={projects} setProjects={setProjects} closeOpenedSections={closeOpenedSections}/>
       <Footer />
 
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {showForm && <ContactForm handleSetShowForm={handleSetShowForm} />}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   )
 }

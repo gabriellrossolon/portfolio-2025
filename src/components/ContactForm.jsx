@@ -1,19 +1,68 @@
 import { motion } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaSpinner, FaCheck, FaTimes } from "react-icons/fa";
 import { MdSend } from "react-icons/md";
 import { useState } from "react";
 
+import styles from "./ContactForm.module.css"; // Importando o CSS Module
+
+const FORM_STATES = {
+  PENDING: "Pending",
+  LOADING: "Loading",
+  SUCCESS: "Success",
+  ERROR: "Error",
+};
+
 const ContactForm = ({ handleSetShowForm }) => {
+  const icons = {
+    [FORM_STATES.PENDING]: <MdSend />,
+    [FORM_STATES.LOADING]: <FaSpinner className={styles.spin} />,
+    [FORM_STATES.SUCCESS]: <FaCheck className="text-green-400" />,
+    [FORM_STATES.ERROR]: <FaTimes className="text-red-500" />,
+  };
+
+  const [formState, setFormState] = useState(FORM_STATES.PENDING);
+
+  const [formMessage, setFormMessage] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      "Olá " +
-        userName +
-        "! Infelizmente o formulário ainda não esta integrado ao back-end, caso queira entrar em contato comigo, pode estar enviando diretamente por email: gabrirossolon@gmail.com"
-    );
-    setUserName("");
-    setUserEmail("");
-    setUserComment("");
+
+    setFormState(FORM_STATES.LOADING);
+
+    fetch("http://localhost:3001/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: userName,
+        email: userEmail,
+        comment: userComment,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          // alert("Mensagem enviada com sucesso!");
+          setFormMessage("Mensagem enviada com sucesso!");
+          setFormState(FORM_STATES.SUCCESS);
+          setUserName("");
+          setUserEmail("");
+          setUserComment("");
+        } else {
+          setFormMessage("Erro ao enviar. Tente novamente mais tarde.");
+          setFormState(FORM_STATES.ERROR);
+          // alert("Erro ao enviar. Tente novamente mais tarde.");
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        setFormState(FORM_STATES.ERROR);
+        setFormMessage(
+          "Erro ao conectar com o servidor. Tente novamente mais tarde."
+        );
+        // alert("Erro ao conectar com o servidor.");
+      });
   };
 
   const [userName, setUserName] = useState("");
@@ -99,12 +148,22 @@ const ContactForm = ({ handleSetShowForm }) => {
             ></textarea>
           </label>
         </div>
-        <button type="submit" className="w-full">
-          <p className="flex items-center justify-center text-2xl gap-2 bg-blue-500 rounded-xl px-4 py-2 font-semibold cursor-pointer hover:bg-blue-600 transition-colors duration-500">
-            Enviar
-            <MdSend />
+        <div className="w-full flex flex-col justify-between items-center gap-10">
+          <button
+            type="submit"
+            className="w-full"
+            disabled={formState === FORM_STATES.LOADING}
+            aria-busy={formState === FORM_STATES.LOADING}
+          >
+            <p className="flex items-center justify-center text-2xl gap-2 bg-blue-500 rounded-xl px-4 py-2 font-semibold cursor-pointer hover:bg-blue-600 transition-colors duration-500">
+              Enviar
+              {icons[formState]}
+            </p>
+          </button>
+          <p className="text-center font-semibold text-xl">
+            {formMessage || ""}
           </p>
-        </button>
+        </div>
       </form>
     </motion.div>
   );

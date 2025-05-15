@@ -1,0 +1,1 @@
+Enquanto na Vercel, vai ignorar a server e consumir apenas a api/contact

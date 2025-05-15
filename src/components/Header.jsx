@@ -29,11 +29,11 @@ const Header = ({handleSetShowForm, darkTheme, handleChangeTheme, closeOpenedSec
           </button>
         </div>
         <div>
-          <button 
+          {/* <button 
           className="rounded-full bg-gray-200 text-black font-bold py-2 px-4 hidden lg:block cursor-pointer hover:bg-blue-500 transition-all duration-500 hover:text-gray-200"
           onClick={() => handleSetShowForm()}>
             Entre em Contato
-          </button>
+          </button> */}
         </div>
         <div 
         className="flex items-center justify-center text-4xl gap-4 hover:bg-white/20 rounded-full p-1"
