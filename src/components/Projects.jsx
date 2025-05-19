@@ -34,6 +34,14 @@ const Projects = ({techIcons}) => {
       siteUrl={"https://portfolio-2025-cyan-eight.vercel.app"}
       techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
       />
+
+      <ProjectCard 
+      title={"WheaterLy - Consulta Clima"} 
+      imgSrc={"wheaterly.png"} 
+      githubUrl={"https://github.com/gabriellrossolon/wheaterly"}
+      siteUrl={"https://wheaterly.vercel.app"}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      />
     </div>
   )
 }
