@@ -42,6 +42,14 @@ const Projects = ({techIcons}) => {
       siteUrl={"https://wheaterly.vercel.app"}
       techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
       />
+
+      <ProjectCard 
+      title={"Converte.Ai - Conversão de Moedas"} 
+      imgSrc={"converteai.png"} 
+      githubUrl={"https://github.com/gabriellrossolon/converte.ai"}
+      siteUrl={"https://converte-ai-gray.vercel.app"}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      />
     </div>
   )
 }
