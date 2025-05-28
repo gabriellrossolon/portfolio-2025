@@ -10,10 +10,10 @@ const Header = ({handleSetShowForm, darkTheme, handleChangeTheme, closeOpenedSec
     >
       <div className="flex flex-col leading-none text-xl font-bold cursor-pointer">
         <div className="text-gray-200">
-          <p><span>Gabriell</span></p>
+          <p className="select-none"><span>Gabriell</span></p>
         </div>
         <div className="pl-4 text-blue-500">
-          <p><span>Rossolon</span></p>
+          <p className="select-none"><span>Rossolon</span></p>
         </div>
       </div>
       <div className="flex justify-between items-center lg:gap-12 gap-4">

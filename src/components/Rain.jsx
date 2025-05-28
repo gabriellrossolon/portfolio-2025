@@ -41,7 +41,7 @@ const Rain = () => {
               animationDelay: `${Math.random() * 2}s`, // Aleatoriza o delay da animação
             }}
           >
-            {item}
+            <p className="select-none">{item}</p>
           </div>
         );
       })}
@@ -49,4 +49,5 @@ const Rain = () => {
   );
 };
 
-export default Rain;
+export default React.memo(Rain);
+

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail, MdLocationOn } from "react-icons/md";
 
-const AboutMe = () => {
+const AboutMe = ({ techIcons }) => {
   const openLink = (url) => {
     window.open(url, "_blank")
   }
@@ -20,7 +20,7 @@ const AboutMe = () => {
           <div className="flex flex-col items-start justify-center gap-4 bg-gray-800/20 rounded-xl p-10 pr-30 backdrop-blur-sm">
             <div className="flex flex-col items-start justify-center gap-1">
               <h3 className="text-2xl font-semibold">Gabriell Rossolon</h3>
-              <p className="text-gray-200 text-xl">
+              <p className="text-gray-200 text-md">
                 Desenvolvedor Front-End 💻
               </p>
             </div>
@@ -40,7 +40,7 @@ const AboutMe = () => {
             </div>
             <p className="flex items-center justify-start text-gray-200 text-xl gap-2">
               <MdLocationOn className="text-2xl text-red-500"/>
-              Cuiabá | Mato-Grosso
+              Cuiabá - MT
             </p>
           </div>
           <div className="flex flex-col items-stretch gap-2 p-4 bg-gray-800/20 rounded-md min-w-max backdrop-blur-sm">
@@ -58,6 +58,18 @@ const AboutMe = () => {
               <FaGithub className="text-2xl"/>
               Github
             </button>
+          </div>
+          <div className="bg-gray-800/20 rounded-xl p-4 text-center">
+            <a
+              href="/cv-gabriell.pdf"
+              download
+              className="
+              bg-blue-500 hover:bg-blue-700 text-gray/200 font-semibold rounded-full transition duration-300
+              text-xl px-10 py-2 text-black
+              "
+              >
+              Baixar Currículo
+            </a>
           </div>
         </div>
       </div>
@@ -138,7 +150,7 @@ const AboutMe = () => {
             <p className="italic text-gray-200">2020 - 2024</p>
           </div>
         </div>
-         <div className="flex flex-col gap-4"> {/* Cursos */}
+        <div className="flex flex-col gap-4"> {/* Cursos */}
           <h2 className="text-5xl md:text-7xl font-bold text-blue-500">
             Cursos
           </h2>
@@ -149,7 +161,42 @@ const AboutMe = () => {
             <li>ReactJS do Básico ao Avançado - Hora de Codar</li>
           </ul>
         </div>
+        <div className="flex flex-col gap-4"> {/* Stack */}
+          <h2 className="text-5xl md:text-7xl font-bold text-blue-500">
+            Stack
+          </h2>
+          <ul className="grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 list-disc list-inside text-gray-200">
+            {techIcons.map((tech, index) => (
+              <li key={index} className="flex items-center gap-2">
+                <span style={{ color: tech.color }} className="text-2xl">
+                  {tech.icon}
+                </span>
+                <span>{tech.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex flex-col gap-4"> {/* Soft Skills */}
+          <h2 className="text-5xl md:text-7xl font-bold text-blue-500">
+            Soft Skills
+          </h2>
+          <ul className="grid lg:grid-cols-3 gap-x-6 gap-y-0.5 list-disc list-inside text-gray-200">
+            <li>Organização</li>
+            <li>Responsabilidade</li>
+            <li>Pensamento analítico</li>
+            <li>Paciência</li>
+            <li>Praticidade</li>
+            <li>Adaptabilidade</li>
+            <li>Resolução de problemas</li>
+            <li>Atenção aos detalhes</li>
+            <li>Curiosidade</li>
+            <li>Autodisciplina</li>
+            <li>Criatividade</li>
+            <li>Persistência</li>
+          </ul>
+        </div>
       </div>
+      
     </motion.div>
   );
 };

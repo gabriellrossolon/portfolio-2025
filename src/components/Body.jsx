@@ -6,7 +6,7 @@ import CardsSect from "./CardsSect";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiTailwindcss, SiDotnet } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 
 import Projects from "./Projects";
@@ -17,9 +17,10 @@ const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections})
     { name: 'JavaScript', icon: <FaJsSquare />, color: '#F7DF1E' },
     { name: 'HTML5', icon: <FaHtml5 />, color: '#E44D26' },
     { name: 'CSS3', icon: <FaCss3Alt />, color: '#264DE4' },
-    { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38BDF8' },
     { name: 'C#', icon: <TbBrandCSharp/>, color: '#68217A'},
+    { name: '.NET', icon: <SiDotnet />, color: '#512BD4' },
+    { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: "Github", icon: <FaGithub />, color: '#FFFFFF'},
   ];
 
@@ -50,7 +51,7 @@ const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections})
             className="flex flex-col items-center justify-center gap-10 w-full"
           >
             
-            <AboutMe />
+            <AboutMe techIcons={techIcons}/>
           </motion.div>
         ) : 
         projects ? (

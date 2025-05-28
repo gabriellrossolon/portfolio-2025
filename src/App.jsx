@@ -1,5 +1,5 @@
 // Hooks -->
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { AnimatePresence } from "framer-motion";
 
 
@@ -8,7 +8,6 @@ import Header from './components/Header'
 import Body from './components/Body'
 import Footer from './components/Footer'
 import Rain from './components/Rain'
-import ContactForm from './components/ContactForm'
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -28,10 +27,12 @@ function App() {
     projects && (setProjects(false))
   } 
 
+  const memorizedRain = useMemo(() => <Rain />, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header handleSetShowForm={handleSetShowForm} darkTheme={darkTheme} handleChangeTheme={handleChangeTheme} closeOpenedSections={closeOpenedSections}/>
-      <Rain />
+      {memorizedRain}
       <Body aboutMe={aboutMe} setAboutMe={setAboutMe} projects={projects} setProjects={setProjects} closeOpenedSections={closeOpenedSections}/>
       <Footer />
 
