@@ -6,7 +6,7 @@ import CardsSect from "./CardsSect";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome } from 'react-icons/fa';
-import { SiTailwindcss, SiDotnet } from 'react-icons/si';
+import { SiTailwindcss, SiDotnet, SiTypescript } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 
 import Projects from "./Projects";
@@ -22,6 +22,7 @@ const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections})
     { name: '.NET', icon: <SiDotnet />, color: '#512BD4' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: "Github", icon: <FaGithub />, color: '#FFFFFF'},
+    { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
   ];
 
   const showingText = aboutMe ? ("< Sobre Mim />") : projects ? ("< Projetos />") : ("< Portfólio />");

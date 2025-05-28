@@ -9,7 +9,7 @@ const Projects = ({techIcons}) => {
       projDesc={"Página Web para consulta de clima com consumo da API OpenWeatherMap API."}
       githubUrl={"https://github.com/gabriellrossolon/wheaterly"}
       siteUrl={"https://wheaterly.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -22,12 +22,21 @@ const Projects = ({techIcons}) => {
       />
 
       <ProjectCard 
+      title={"Gitly - Controle de Presentes"} 
+      imgSrc={"giftly.png"} 
+      projDesc={"Aplicação Web para controle de compra de presentes para pessoas especiais."}
+      githubUrl={"https://github.com/gabriellrossolon/giftly"}
+      siteUrl={"https://giftly-ten.vercel.app"}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "TypeScript"].includes(tech.name))}
+      />
+
+      <ProjectCard 
       title={"Calculadora de IMC"} 
       imgSrc={"calculadoradeimc.png"} 
       projDesc={"Calculadora de Indíce de Massa Corporal, feita com foco em Componentização."}
       githubUrl={"https://github.com/gabriellrossolon/imc_calc_react"}
       siteUrl={"https://imc-calc-react.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -36,7 +45,7 @@ const Projects = ({techIcons}) => {
       projDesc={"Página de Login simulando o envio das informações para o Back-end."}
       githubUrl={"https://github.com/gabriellrossolon/login-screen-react?tab=readme-ov-file"}
       siteUrl={"https://login-screen-react-bay.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -45,7 +54,7 @@ const Projects = ({techIcons}) => {
       projDesc={"Formulário multi-passos com foco em componentização e single-page."}
       githubUrl={"https://github.com/gabriellrossolon/form-multistep-react?tab=readme-ov-file"}
       siteUrl={"https://form-multistep-react-nu.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -54,7 +63,7 @@ const Projects = ({techIcons}) => {
       projDesc={"Conversor de Moedas em tempo real, consumindo a API Frankfurter API."}
       githubUrl={"https://github.com/gabriellrossolon/converte.ai"}
       siteUrl={"https://converte-ai-gray.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript", "HTML5", "CSS3"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
     </div>
   )
