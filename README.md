@@ -16,13 +16,13 @@ Este portfolio foi criado com muito carinho utilizando **React + Vite + Tailwind
 
 ## 🛠 Tecnologias Usadas
 
-| Tecnologia | Descrição                          | Ícone            |
-|------------|----------------------------------|------------------|
-| React      | Biblioteca JS para UI dinâmica   | ⚛️               |
-| Vite       | Ferramenta de build ultrarrápida | ⚡               |
-| Tailwind   | Framework CSS utilitário          | 🎨               |
-| Responsivo | Layout adaptável para qualquer tela | 📱             |
-| UX/UI      | Animações suaves e navegação fluida | 🎉             |
+| Tecnologia | Descrição                          |
+|------------|----------------------------------|
+| React ⚛️      | Biblioteca JS para UI dinâmica   |
+| Vite  ⚡     | Ferramenta de build ultrarrápida |
+| Tailwind 🎨   | Framework CSS utilitário          | 
+| Responsivo 📱 | Layout adaptável para qualquer tela | 
+| UX/UI 🎉      | Animações suaves e navegação fluida | 
 
 ---
 
