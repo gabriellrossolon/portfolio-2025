@@ -8,7 +8,7 @@ const Projects = ({techIcons}) => {
       imgSrc={"orcamentofacil.png"} 
       projDesc={"Aplicação web para criação de orçamentos rápido, com atalho para gerar em PDF."}
       githubUrl={"https://github.com/gabriellrossolon/orcamento-facil"}
-      siteUrl={"https://wheaterly.vercel.app"}
+      siteUrl={"https://orcamento-facil-nine.vercel.app"}
       techIcons={techIcons.filter(tech => ["React", "Tailwind", "TypeScript"].includes(tech.name))}
       />
 
