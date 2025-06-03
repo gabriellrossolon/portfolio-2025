@@ -13,16 +13,17 @@ import Projects from "./Projects";
 
 const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections}) => {
   const techIcons = [
-    { name: 'React', icon: <FaReact />, color: '#61DBFB' },
-    { name: 'JavaScript', icon: <FaJsSquare />, color: '#F7DF1E' },
     { name: 'HTML5', icon: <FaHtml5 />, color: '#E44D26' },
     { name: 'CSS3', icon: <FaCss3Alt />, color: '#264DE4' },
-    { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38BDF8' },
+    { name: 'React', icon: <FaReact />, color: '#61DBFB' },
+    { name: 'JavaScript', icon: <FaJsSquare />, color: '#F7DF1E' },
+    { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
     { name: 'C#', icon: <TbBrandCSharp/>, color: '#68217A'},
     { name: '.NET', icon: <SiDotnet />, color: '#512BD4' },
+    { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38BDF8' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: "Github", icon: <FaGithub />, color: '#FFFFFF'},
-    { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
+    
   ];
 
   const showingText = aboutMe ? ("< Sobre Mim />") : projects ? ("< Projetos />") : ("< Portfólio />");

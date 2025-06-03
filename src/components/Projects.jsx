@@ -3,13 +3,13 @@ import ProjectCard from "./ProjectCard"
 const Projects = ({techIcons}) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <ProjectCard 
-      title={"WheaterLy - Consulta Clima"} 
-      imgSrc={"wheaterly.png"} 
-      projDesc={"Página Web para consulta de clima com consumo da API OpenWeatherMap API."}
-      githubUrl={"https://github.com/gabriellrossolon/wheaterly"}
+       <ProjectCard 
+      title={"Orçamento Facil"} 
+      imgSrc={"orcamentofacil.png"} 
+      projDesc={"Aplicação web para criação de orçamentos rápido, com atalho para gerar em PDF."}
+      githubUrl={"https://github.com/gabriellrossolon/orcamento-facil"}
       siteUrl={"https://wheaterly.vercel.app"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "TypeScript"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -17,8 +17,8 @@ const Projects = ({techIcons}) => {
       imgSrc={"taskify.png"} 
       projDesc={"Lista de Tarefas com Integração de API própria. Front em React e Back em ASP.NET."}
       githubUrl={"https://github.com/gabriellrossolon/taskify"}
-      siteUrl={"#"}
-      techIcons={techIcons.filter(tech => ["React", "Tailwind", "C#", ".NET"].includes(tech.name))}
+      siteUrl={"https://orcamento-facil-nine.vercel.app"}
+      techIcons={techIcons.filter(tech => ["React", "JavaScript", "Tailwind", "C#", ".NET"].includes(tech.name))}
       />
 
       <ProjectCard 
@@ -28,6 +28,15 @@ const Projects = ({techIcons}) => {
       githubUrl={"https://github.com/gabriellrossolon/giftly"}
       siteUrl={"https://giftly-ten.vercel.app"}
       techIcons={techIcons.filter(tech => ["React", "Tailwind", "TypeScript"].includes(tech.name))}
+      />
+
+      <ProjectCard 
+      title={"WheaterLy - Consulta Clima"} 
+      imgSrc={"wheaterly.png"} 
+      projDesc={"Página Web para consulta de clima com consumo da API OpenWeatherMap API."}
+      githubUrl={"https://github.com/gabriellrossolon/wheaterly"}
+      siteUrl={"https://wheaterly.vercel.app"}
+      techIcons={techIcons.filter(tech => ["React", "Tailwind", "JavaScript"].includes(tech.name))}
       />
 
       <ProjectCard 
