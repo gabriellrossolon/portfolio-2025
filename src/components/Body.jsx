@@ -3,7 +3,6 @@ import AnimatedText from "./AnimatedText";
 import Button from "./Button";
 import CardsSect from "./CardsSect";
 
-import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome } from 'react-icons/fa';
 import { SiTailwindcss, SiDotnet, SiTypescript } from 'react-icons/si';
