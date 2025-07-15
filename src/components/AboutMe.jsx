@@ -21,7 +21,7 @@ const AboutMe = ({ techIcons }) => {
             <div className="flex flex-col items-start justify-center gap-1">
               <h3 className="text-2xl font-semibold">Gabriell Rossolon</h3>
               <p className="text-gray-200 text-md">
-                Desenvolvedor Front-End 💻
+                Desenvolvedor 💻
               </p>
             </div>
             <div>
@@ -61,7 +61,7 @@ const AboutMe = ({ techIcons }) => {
           </div>
           <div className="bg-gray-800/20 rounded-xl p-4 text-center">
             <a
-              href="/cv-gabriell.pdf"
+              href="/Curriculo Desenvolvedor - Gabriell.pdf"
               download
               className="
               bg-blue-500 hover:bg-blue-700 text-gray/200 font-semibold rounded-full transition duration-300
@@ -82,7 +82,7 @@ const AboutMe = ({ techIcons }) => {
             Oi! Sou o Gabriell, nascido em 2001 e apaixonado por tecnologia.
             Desde cedo, mergulhei no mundo da programação como autodidata,
             movido pela curiosidade e pela vontade de criar. Hoje, atuo como
-            desenvolvedor front-end, unindo lógica e criatividade para construir
+            desenvolvedor, unindo lógica e criatividade para construir
             interfaces com propósito. Mas meu objetivo vai além: estou no
             caminho para me tornar fullstack, porque também adoro o backend —
             afinal, quem resiste a fazer mágica com uns ifs e elses? Estou
@@ -96,7 +96,7 @@ const AboutMe = ({ techIcons }) => {
           <div className="flex flex-col items-start gap-2">
             <div className="flex flex-col">
               <h3 className="text-3xl font-bold">Asstramed SST</h3>
-              <h4 className="font-semibold text-blue-200">Desenvolvedor Front-End Jr.</h4>
+              <h4 className="font-semibold text-blue-200">Desenvolvedor Jr.</h4>
               <p className="text-gray-20 italic">Fev/2023 - Presente</p>
             </div>
             <ul className="list-disc list-inside text-gray-200">
@@ -159,6 +159,8 @@ const AboutMe = ({ techIcons }) => {
             <li>HTML, CSS e JavaScript - Alura</li>
             <li>Aplicaçõe Web com JavaScript - Alura</li>
             <li>ReactJS do Básico ao Avançado - Hora de Codar</li>
+            <li>C# do Básico ao Avançado - Udemy</li>
+            <li>DataBase SQL do Básico ao Avançado - Udemy</li>
           </ul>
         </div>
         <div className="flex flex-col gap-4"> {/* Stack */}

@@ -18,7 +18,7 @@ const handleProjects = () => {
         <InfoCard colSpan="lg:col-span-3" gap="gap-2">
           <img src="https://avatars.githubusercontent.com/u/137924322?s=400&u=..." alt="Foto" className="rounded-full max-w-32 max-h-32" />
           <h2 className="text-2xl font-bold text-white">Oi! Sou o Gabriell 👋</h2>
-          <p className="text-gray-300 text-xl">Desenvolvedor Front-End 🖥️</p>
+          <p className="text-gray-300 text-xl">Desenvolvedor Full-Stack 🖥️</p>
         </InfoCard>
        
         <InfoCard colSpan="lg:col-span-1" gap="gap-2" onClick={handleAboutMe}>

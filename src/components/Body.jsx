@@ -4,8 +4,8 @@ import Button from "./Button";
 import CardsSect from "./CardsSect";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome } from 'react-icons/fa';
-import { SiTailwindcss, SiDotnet, SiTypescript } from 'react-icons/si';
+import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaHome, FaDatabase } from 'react-icons/fa';
+import { SiTailwindcss, SiDotnet, SiTypescript, SiMysql, SiSqlite } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 
 import Projects from "./Projects";
@@ -22,7 +22,8 @@ const Body = ({aboutMe, setAboutMe, projects, setProjects, closeOpenedSections})
     { name: 'Tailwind', icon: <SiTailwindcss />, color: '#38BDF8' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F1502F' },
     { name: "Github", icon: <FaGithub />, color: '#FFFFFF'},
-    
+    { name: 'SQL Server', icon: <FaDatabase />, color: '#0064a5' },
+    { name: 'MySQL', icon: <SiMysql />, color: '#00758F' },
   ];
 
   const showingText = aboutMe ? ("< Sobre Mim />") : projects ? ("< Projetos />") : ("< Portfólio />");
